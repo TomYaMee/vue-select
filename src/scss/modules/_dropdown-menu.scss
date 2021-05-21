@@ -23,7 +23,7 @@ $max-height: $vs-dropdown-max-height;
   padding: 5px 0;
   margin: 0;
   width: 100%;
-  max-height: $max-height + 40px;
+  min-height: $max-height;
   min-width: $min-width;
   overflow-y: auto;
   box-shadow: $box-shadow;
