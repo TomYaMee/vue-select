@@ -96,6 +96,7 @@
           tabindex="-1"
           v-append-to-body
         >
+          <slot name="sticky-header" />
           <ul class="vs__dropdown-list">
             <slot name="list-header" v-bind="scope.listHeader" />
             <li

@@ -3,28 +3,16 @@
     <v-select v-model="selected" v-bind="config" />
     <v-select v-model="selected" v-bind="config">
       <template #sticky-footer>
-        <b-row align-v="center">
-          <b-col cols="12" md="7">
-            <slot name="footer-template">
-              <div class="title">Can't find your practice?</div>
-              <div class="subtitle">
-                If you can't find a practice in the list you can add it manually
-              </div>
-            </slot>
-          </b-col>
-          <b-col cols="12" md="5" class="text-right">
-            <BaseButton
-              class="font-weight-bold ml-auto"
-              :icon="['fas', 'plus']"
-              :variant="variant"
-              @click="$emit('add')"
-            >
-              <div style="font-size: 18px" class="m-0">
-                <slot name="footer-button">Add Manually</slot>
-              </div>
-            </BaseButton>
-          </b-col>
-        </b-row>
+        <div class="title">Test</div>
+        <div class="subtitle">
+          Multiline
+        </div>
+      </template>
+      <template #sticky-header>
+        <div class="title">Test</div>
+        <div class="subtitle">
+          Multiline
+        </div>
       </template>
     </v-select>
   </div>

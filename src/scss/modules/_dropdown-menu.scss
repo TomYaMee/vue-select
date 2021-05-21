@@ -23,7 +23,6 @@ $max-height: $vs-dropdown-max-height;
   padding: 5px 0;
   margin: 0;
   width: 100%;
-  min-height: $max-height;
   min-width: $min-width;
   overflow-y: auto;
   box-shadow: $box-shadow;
@@ -38,6 +37,8 @@ $max-height: $vs-dropdown-max-height;
 .vs__dropdown-list {
   overflow-y: auto;
   max-height: $max-height;
+  padding: 5px 0;
+  margin: 0;
 }
 
 .vs__no-options {
