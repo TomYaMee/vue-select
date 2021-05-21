@@ -1,22 +1,25 @@
 <template>
   <div id="app">
     <v-select v-model="selected" v-bind="config" />
+    <v-select v-model="selected" v-bind="config">
+      <template #sticky-footer><div>Test1223</div></template>
+    </v-select>
   </div>
 </template>
 
 <script>
-import vSelect from "../src/components/Select";
-import countries from "../docs/.vuepress/data/countryCodes";
-import books from "../docs/.vuepress/data/books";
+import vSelect from '../src/components/Select';
+import countries from '../docs/.vuepress/data/countryCodes';
+import books from '../docs/.vuepress/data/books';
 
 export default {
   components: { vSelect },
   data: () => ({
     selected: null,
     config: {
-      options: countries
-    }
-  })
+      options: countries,
+    },
+  }),
 };
 </script>
 
@@ -30,8 +33,7 @@ body {
 
 #app {
   height: 100%;
-  max-width: 20rem;
-  margin: 10rem auto 0;
+  margin: 10rem;
 }
 
 hr {
