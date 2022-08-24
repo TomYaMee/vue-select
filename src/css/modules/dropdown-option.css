@@ -5,7 +5,7 @@
     padding: var(--vs-dropdown-option-padding);
     clear: both;
     color: var(--vs-dropdown-option-color); /* Overrides most CSS frameworks */
-    white-space: nowrap;
+    white-space: pre-line;
     cursor: pointer;
 }
 

@@ -1,6 +1,16 @@
 <template>
   <div id="app">
-    <v-select v-model="selected" v-bind="config" />
+    <v-select v-model="selected" v-bind="config"></v-select>
+    <v-select v-model="selected" v-bind="config">
+      <template #sticky-footer>
+        <div class="title">Test</div>
+        <div class="subtitle"> Multiline </div>
+      </template>
+      <template #sticky-header>
+        <div class="title">Test</div>
+        <div class="subtitle"> Multiline </div>
+      </template>
+    </v-select>
   </div>
 </template>
 
