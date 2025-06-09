@@ -98,7 +98,7 @@
           @mouseup="onMouseUp"
         >
           <slot name="sticky-header" />
-          <ul class="vs__dropdown-list">
+          <ul class="vs__dropdown-list" ref="dropdownList">
             <slot name="list-header" v-bind="scope.listHeader" />
             <li
               v-for="(option, index) in filteredOptions"
