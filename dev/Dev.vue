@@ -1,6 +1,16 @@
 <template>
   <div id="app">
     <v-select v-model="selected" v-bind="config" />
+    <v-select v-model="selected" v-bind="config">
+      <template #sticky-footer>
+        <div class="title">Test</div>
+        <div class="subtitle">Multiline</div>
+      </template>
+      <template #sticky-header>
+        <div class="title">Test</div>
+        <div class="subtitle">Multiline</div>
+      </template>
+    </v-select>
   </div>
 </template>
 
@@ -30,8 +40,7 @@ body {
 
 #app {
   height: 100%;
-  max-width: 20rem;
-  margin: 10rem auto 0;
+  margin: 10rem;
 }
 
 hr {

@@ -33,6 +33,13 @@ $max-height: $vs-dropdown-max-height;
   background: $bg-color;
 }
 
+.vs__dropdown-list {
+  overflow-y: auto;
+  max-height: $max-height;
+  padding: 5px 0;
+  margin: 0;
+}
+
 .vs__no-options {
   text-align: center;
 }
